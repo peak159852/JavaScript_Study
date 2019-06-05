@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+</head>
+<body>
+    <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
+    </ul>
+    <ol>
+        <li>html</li>
+        <li class = "active">css</li>
+        <li>javascript</li>
+    </ol>
+    <p>querySelectorAll 확인용!</p>
+    <p>querySelectorAll 확인용!</p>
+    <p>querySelectorAll 확인용!</p>
+    <p>querySelectorAll 확인용!</p>
+
+    <script>
+        var lis = document.querySelector('li');
+        lis.style.color = 'red';
+        var cl = document.querySelector('.active');
+        cl.style.color = 'blue';
+        var ps = document.querySelectorAll('p');
+        for(var name in ps){
+            ps[name].style.color = 'yellow';
+        }
+    </script>
+</body>
+</html>
